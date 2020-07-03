@@ -4,15 +4,15 @@
 
     <br>
 
-    <form method="post" enctype="multipart/form-data" action="predictImage">
+    <form method="post" enctype="multipart/form-data" action="predict">
 
         {% csrf_token %}
-        <input name="filePath" type="file"><br><br>
+        <div class="col-md-4 col-sm-4"><label for="fname"></label> </div> <input name="fileP" type="file"><br><br>
         <br>
 
 
-        <input type="submit" value="classify"></div>
-
+        <input type="submit" value="Submit"></div>
+<img src="{{path}}"> {{path}}
 
 
 </form>
