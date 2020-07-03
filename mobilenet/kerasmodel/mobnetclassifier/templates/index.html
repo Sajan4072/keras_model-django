@@ -2,23 +2,18 @@
 <div style="text-align: center;">
     <h2>Classify</h2>
 
+    <br>
 
     <form method="post" enctype="multipart/form-data" action="predictImage">
 
         {% csrf_token %}
-
-        <div class="row" style="text-align: center;">
-            <label for="fname">Upload Image:</label>
-            <input class="from-control" name="fname" type="file">
+        <input name="filePath" type="file"><br><br>
+        <br>
 
 
-            <input type="submit" value="Submit" style="width: 100px; height: 40px;">
-        </div>
-</div>
+        <input type="submit" value="classify"></div>
+
+
 
 </form>
-
-
-
-
-{% endblock %}
+<br> {% endblock %}
