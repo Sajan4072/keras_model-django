@@ -3,7 +3,7 @@ from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 def index(request):
-    context={}
+    context={'a':1}
     return render(request,'index.html',context)
     
 def classifier(request):
